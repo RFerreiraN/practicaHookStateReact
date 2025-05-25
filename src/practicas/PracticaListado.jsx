@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { AgregarTarea } from "./AgregarTarea"
 
 const ItemsNombres = ({ nombre, visto }) => {
   return (
@@ -35,9 +36,9 @@ export const PracticaListado = () => {
 
   const [arreglo, setArreglo] = useState(listadoNombres)
 
-  const addTask = () => {
-    setArreglo([...arreglo, { nombre: 'Manuel Ferreira', visto: false }])
-}
+//   const addTask = () => {
+//     setArreglo([...arreglo, { nombre: 'Manuel Ferreira', visto: false }])
+// }
 
 
   return (
@@ -46,7 +47,8 @@ export const PracticaListado = () => {
       <ul>
         {arreglo.map(item => <ItemsNombres key={item.nombre} nombre={item.nombre} visto={item.visto} />)}
       </ul>
-      <button onClick={() => addTask()}>Agregar Tarea</button>
+      {/* { <button onClick={() => addTask()}>Agregar Tarea</button> } */}
+      <AgregarTarea/>        
     </>
   )
 }
