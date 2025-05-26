@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { AgregarTarea } from "./AgregarTarea"
-import { PracticaComuPadreHijo } from "./PracticaListadoPadreHijo/PracticaComuPadreHijo"
+
 
 const ItemsNombres = ({ nombre, visto }) => {
   return (
