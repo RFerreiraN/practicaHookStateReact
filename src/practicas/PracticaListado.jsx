@@ -48,7 +48,7 @@ export const PracticaListado = () => {
         {arreglo.map(item => <ItemsNombres key={item.nombre} nombre={item.nombre} visto={item.visto} />)}
       </ul>
       {/* { <button onClick={() => addTask()}>Agregar Tarea</button> } */}
-      <AgregarTarea/>        
+      <AgregarTarea agregarNombre={setArreglo}/>        
     </>
   )
 }
