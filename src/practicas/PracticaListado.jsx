@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { AgregarTarea } from "./AgregarTarea"
+import { PracticaComuPadreHijo } from "./PracticaListadoPadreHijo/PracticaComuPadreHijo"
 
 const ItemsNombres = ({ nombre, visto }) => {
   return (
@@ -48,7 +49,8 @@ export const PracticaListado = () => {
         {arreglo.map(item => <ItemsNombres key={item.nombre} nombre={item.nombre} visto={item.visto} />)}
       </ul>
       {/* { <button onClick={() => addTask()}>Agregar Tarea</button> } */}
-      <AgregarTarea agregarNombre={setArreglo}/>        
+      {/* <AgregarTarea agregarNombre={setArreglo}/> */}      
+      <PracticaComuPadreHijo/>   
     </>
   )
 }

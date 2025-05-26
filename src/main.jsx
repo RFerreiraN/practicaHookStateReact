@@ -6,11 +6,12 @@ import { CondicionalTernario } from './CondicionalTernario'
 import { Maps } from './Maps'
 import { Practica } from './practicas/PracticaUseState'
 import { PracticaListado } from './practicas/PracticaListado'
+import { PracticaComuPadreHijo } from './practicas/PracticaListadoPadreHijo/PracticaComuPadreHijo'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <PracticaListado/>
+      <PracticaComuPadreHijo/>
   </StrictMode>,
 )
 

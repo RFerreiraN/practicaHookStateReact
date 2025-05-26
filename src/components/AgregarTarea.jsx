@@ -12,7 +12,7 @@ export const AgregarTarea = () => {
       console.log(inputValue)
       console.log(event)
       if(inputValue == 0){
-        alert('Debes escribir una tarea')
+        return
       }
   }
   return (
