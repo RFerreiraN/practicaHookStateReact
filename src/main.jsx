@@ -12,7 +12,7 @@ import { ListadoCursos } from './practicas/PracticaListadoPadreHijo/ListadoCurso
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <ListadoCursos/>
+      <ListadoCursos />
   </StrictMode>,
 )
 
