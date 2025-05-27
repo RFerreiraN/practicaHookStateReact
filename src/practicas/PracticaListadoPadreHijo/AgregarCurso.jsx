@@ -12,7 +12,7 @@ export const AgregarCurso = ({ agregarCurso }) => {
   const onSubmitCurso = (e) => {
       e.preventDefault()
       agregarCurso(curso)
-      
+      setCurso('')
   }
   
   return (

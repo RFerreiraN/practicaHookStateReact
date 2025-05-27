@@ -24,13 +24,17 @@ export const ListadoCursos = () => {
   const [cursos, setCursos] = useState(listadoCursos)
 
   const onAgregarCurso = (val) => {
+    
+        const valor = val.trim();
+        if(valor.length < 1) return
+
         let envio = {
         id :cursos.length,
-        nombre : val,
+        nombre : valor,
         visto : false
       }
-
       setCursos([...cursos, envio])
+
   }
 
   return (
