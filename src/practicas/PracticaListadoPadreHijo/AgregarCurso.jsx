@@ -22,8 +22,7 @@ export const AgregarCurso = ({ agregarCurso }) => {
              value={curso} 
              onChange={onChangeCurso}
       />
-      </form>
-      
+      </form>    
   )
 }
 
