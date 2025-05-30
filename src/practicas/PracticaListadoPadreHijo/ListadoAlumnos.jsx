@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { AgregarAlumno } from './AgregarAlumno';
 
 const Items = ({nombre, inscrito}) => {
   return(
@@ -26,6 +27,7 @@ export const ListadoAlumnos = () => {
         <ol>
           { alumnos.map( alumno => <Items nombre={ alumno.nombre } inscrito={ alumno.inscrito } key={ alumno.nombre }/>) }
         </ol>
+        <AgregarAlumno />
     </>      
   )
 }
