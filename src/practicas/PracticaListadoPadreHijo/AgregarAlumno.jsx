@@ -1,16 +1,17 @@
 import {useState} from 'react';
 
-export const AgregarAlumno = () => {
+export const AgregarAlumno = ({agregarAlumno}) => {
 
   const [alumno, setAlumno] = useState('')
 
   const inputAlumno = (event) => {
       setAlumno(event.target.value)
-      console.log(alumno)
   }
 
   const onSubmitAlumno = (event) => {
       event.preventDefault()
+      agregarAlumno(alumno)
+      setAlumno('')
   }
 
   return (
