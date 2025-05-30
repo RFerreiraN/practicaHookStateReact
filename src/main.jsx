@@ -7,12 +7,13 @@ import { Maps } from './Maps'
 import { Practica } from './practicas/PracticaUseState'
 import { PracticaListado } from './practicas/PracticaListado'
 import { ListadoCursos } from './practicas/PracticaListadoPadreHijo/ListadoCursos'
+import { ListadoAlumnos } from './practicas/PracticaListadoPadreHijo/ListadoAlumnos'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <ListadoCursos />
+      <ListadoAlumnos/>
   </StrictMode>,
 )
 
