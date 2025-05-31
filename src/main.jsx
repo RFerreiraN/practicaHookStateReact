@@ -8,13 +8,12 @@ import { Practica } from './practicas/PracticaUseState'
 import { PracticaListado } from './practicas/PracticaListado'
 import { ListadoCursos } from './practicas/PracticaListadoPadreHijo/ListadoCursos'
 import { ListadoAlumnos } from './practicas/PracticaListadoPadreHijo/ListadoAlumnos'
-import { UsersApp } from './components/UsersApp'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <UsersApp/>
+      <ListadoAlumnos/>
   </StrictMode>,
 )
 
