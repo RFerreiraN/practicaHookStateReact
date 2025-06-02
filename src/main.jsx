@@ -9,12 +9,13 @@ import { PracticaListado } from './practicas/PracticaListado'
 import { ListadoCursos } from './practicas/PracticaListadoPadreHijo/ListadoCursos'
 import { ListadoAlumnos } from './practicas/PracticaListadoPadreHijo/ListadoAlumnos'
 import { UsersApp } from './components/UsersApp'
+import { UsuariosApp } from './practicas/PracticauseEffect/UsuariosApp'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <UsersApp/>
+     <UsuariosApp/>
   </StrictMode>,
 )
 
