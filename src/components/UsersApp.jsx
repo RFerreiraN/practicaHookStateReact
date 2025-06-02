@@ -11,7 +11,7 @@ export const UsersApp = () => {
         setUsers(data)
         // console.log(data)
       }catch (error){
-        console.error(error)
+       console.error(error)
       }
   }
 
@@ -27,7 +27,7 @@ export const UsersApp = () => {
       </ul>
       <h2>Alias de Usuarios: </h2>
       <ul>
-        { users.map( user => <li key={user.id}>{user.username}</li>)}
+        { users.map( user => <li key={user.id}>{user.username} </li>)}
       </ul>
     </>
   )
